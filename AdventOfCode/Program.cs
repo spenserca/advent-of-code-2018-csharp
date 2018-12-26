@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
+using AdventOfCode.DayOne;
 
 namespace AdventOfCode
 {
-    class Program
+    [ExcludeFromCodeCoverage]
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"DayOneSolution.First: {DayOneSolution.First(null)}. DayOneSolution.Second: {DayOneSolution.Second(null)}.");
+
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
